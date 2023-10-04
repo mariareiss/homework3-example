@@ -7,19 +7,16 @@ while ($professor = $professors-> fetch_assoc()) {
     <div class="card-body">
       <h5 class="card-title"><?php echo $professor['professor_name']; ?></h5>
       <p class="card-text">
+      <ul class="list-group">
 <?php
   $classes= selectClassByProfessor($professor['professor_id']);
   while ($class = $classes-> fetch_assoc()){
 ?>
-          <td><?php echo $class['class_id']; ?></td>
-          <td><?php echo $class['class_number']; ?></td>
-          <td><?php echo $class['class_description']; ?></td>
-          <td><?php echo $class['semester']; ?></td>
-          <td><?php echo $class['room']; ?></td>
-          <td><?php echo $class['day_time']; ?></td>
+      <li class="list-group-item"><?php echo $class['class_number']; ?> - <?php echo $class['semester']; ?> - <?php echo $class['room']; ?> - <?php echo $class['day_time']; ?></li>
 <?php   
   }
 ?>
+      </ul>
       </p>
       <p class="card-text"><small class="text-body-secondary">Class:<?php echo $professor['professor_class'];?></small></p>
     </div>
