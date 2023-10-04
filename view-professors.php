@@ -6,6 +6,7 @@
       <th>ID</th>
       <th>Name</th>
       <th>Class</th> 
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -16,6 +17,7 @@ while ($professor = $professors-> fetch_assoc()) {
     <td><?php echo $professor['professor_id']; ?></td>
     <td><?php echo $professor['professor_name']; ?></td>
     <td><?php echo $professor['professor_class']; ?></td>
+    <td><a href="classes-by-professor.php?id=<?php echo $professor['professor_id']; ?>">Classes</a></td>
   </tr>
 <?php
 }
