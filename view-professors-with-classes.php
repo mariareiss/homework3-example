@@ -10,7 +10,7 @@ while ($professor = $professors-> fetch_assoc()) {
       <ul class="list-group">
 <?php
   $classes= selectClassByProfessor($professor['professor_id']);
-  while ($class = $classes-> fetch_assoc()){
+  while ($class = $Classes-> fetch_assoc()){
 ?>
       <li class="list-group-item"><?php echo $class['class_number']; ?> - <?php echo $class['semester']; ?> - <?php echo $class['room']; ?> - <?php echo $class['day_time']; ?></li>
 <?php   
