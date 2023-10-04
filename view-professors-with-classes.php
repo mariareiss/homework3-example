@@ -11,6 +11,12 @@ while ($professor = $professors-> fetch_assoc()) {
   $classes= selectClassByProfessor($professor['professor_id']);
   while ($class = $classes-> fetch_assoc()){
 ?>
+          <td><?php echo $class['class_id']; ?></td>
+          <td><?php echo $class['class_number']; ?></td>
+          <td><?php echo $class['class_description']; ?></td>
+          <td><?php echo $class['semester']; ?></td>
+          <td><?php echo $class['room']; ?></td>
+          <td><?php echo $class['day_time']; ?></td>
 <?php   
   }
 ?>
