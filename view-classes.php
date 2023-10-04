@@ -18,7 +18,7 @@ while ($class = $Classes-> fetch_assoc()) {
     <td><?php echo $class['class_number']; ?></td>
     <td><?php echo $class['class_description']; ?></td>
     <td>
-       <form method="post" action="sections-by-class.php>
+       <form method="post" action="sections-by-class.php">
          <input type="hidden" name="sid" value="<?php echo $class['class_id']; ?>">
          <button type="submit" class="btn btn-primary">Sections</button>
        </form>  
