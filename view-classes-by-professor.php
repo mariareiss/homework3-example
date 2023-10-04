@@ -1,4 +1,4 @@
-<h1>Classes by Professors</h1>
+<h1>Classes by Professor</h1>
 <div class="table-responsive">
   <table class="table">
     <thead>
@@ -8,7 +8,7 @@
       <th>Description</th> 
       <th>Semester</th>
       <th>Room</th>
-      <th>Day_Time</th>
+      <th>Day/ Time</th>
       </tr>
     </thead>
     <tbody>
